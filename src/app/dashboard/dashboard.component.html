@@ -1,0 +1,133 @@
+
+<div class="container">
+  <app-menu></app-menu>
+  <br><br>
+  <div class="carousel">
+    <div class="slide active" style="background-image: url('./assets/img/comp.jpg');"></div>
+    <div class="slide" style="background-image: url('./assets/img/comp1.png');"></div>
+    <div class="slide" style="background-image: url('./assets/img/perfil.jpg');"></div>
+  </div>
+
+  <h2>Empresas</h2>
+
+  <div class="card-container">
+    <div class="card">
+      <img src="./assets/img/alpina.png" alt="Logo de Tech Solutions">
+      <div class="card-content">
+        <h3>Tech Solutions</h3>
+        <p>Requisitos para la vacante:</p>
+        <ul>
+          <li>Experiencia en desarrollo de software (mínimo 2 años)</li>
+          <li>Conocimientos en tecnologías web como HTML, CSS, JavaScript</li>
+          <li>Habilidades de resolución de problemas y trabajo en equipo</li>
+          <li>Excelentes habilidades de comunicación</li>
+        </ul>
+        <div class="card-content file-upload-container">
+          <label for="archivoInput" class="file-upload-btn">
+            Seleccionar Archivo
+          </label>
+          <span class="file-name" *ngIf="archivoAdjunto">{{ archivoAdjunto.name }}</span>
+          <input type="file" id="archivoInput" #archivoInput (change)="handleFileChange($event, 'Alpina')"
+            class="file-upload-input">
+        </div>
+        <button (click)="enviarHojaDeVida('Tecn Solutions')">Enviar Hoja de Vida</button>
+        </div>
+    </div>
+
+    <div class="card">
+      <img src="./assets/img/colombina.png" alt="Logo de Colombina" class="card-img-top">
+      <div class="card-content">
+        <h3>Colombina</h3>
+        <p>Requisitos para la vacante:</p>
+        <ul>
+          <li>Experiencia en producción de alimentos (mínimo 3 años)</li>
+          <li>Conocimientos en procesos de fabricación de confitería y alimentos</li>
+          <li>Habilidades en control de calidad y aseguramiento de la producción</li>
+          <li>Conocimientos en normativas de seguridad alimentaria</li>
+        </ul>
+      <div class="card-content file-upload-container">
+        <label for="archivoInput" class="file-upload-btn">
+          Seleccionar Archivo
+        </label>
+        <span class="file-name" *ngIf="archivoAdjunto">{{ archivoAdjunto.name }}</span>
+        <input type="file" id="archivoInput" #archivoInput (change)="handleFileChange($event, 'Alpina')"
+          class="file-upload-input">
+      </div>
+      <button (click)="enviarHojaDeVida('colombina')">Enviar Hoja de Vida</button>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="./assets/img/alpina.png" alt="Logo de Alpina" class="card-img-top">
+      <div class="card-content">
+        <h3>Alpina</h3>
+        <p>Requisitos para la vacante:</p>
+        <ul>
+          <li>Experiencia en producción y procesamiento de productos lácteos</li>
+          <li>Conocimientos en tecnologías de empaque y distribución de alimentos</li>
+          <li>Habilidades en gestión de cadena de suministro y logística</li>
+          <li>Conocimientos en normativas de calidad y seguridad alimentaria</li>
+        </ul>
+      <div class="card-content file-upload-container">
+        <label for="archivoInput" class="file-upload-btn">
+          Seleccionar Archivo
+        </label>
+        <span class="file-name" *ngIf="archivoAdjunto">{{ archivoAdjunto.name }}</span>
+        <input type="file" id="archivoInput" #archivoInput (change)="handleFileChange($event, 'Alpina')"
+          class="file-upload-input">
+      </div>
+      <button (click)="enviarHojaDeVida('Alpina')">Enviar Hoja de Vida</button>
+      </div>
+    </div>
+
+
+  <div class="card">
+    <img src="./assets/img/nutresa.png" alt="Logo de Nutresa" class="card-img-top">
+    <div class="card-content">
+      <h3>Nutresa</h3>
+      <p>Requisitos para la vacante:</p>
+      <ul>
+        <li>Experiencia en gestión de procesos de manufactura y producción</li>
+        <li>Conocimientos en innovación de productos alimenticios</li>
+        <li>Habilidades en control de calidad y aseguramiento de la producción</li>
+        <li>Conocimientos en normativas de seguridad alimentaria</li>
+      </ul>
+      <div class="card-content file-upload-container">
+        <label for="archivoInput" class="file-upload-btn">
+          Seleccionar Archivo
+        </label>
+        <span class="file-name" *ngIf="archivoAdjunto">{{ archivoAdjunto.name }}</span>
+        <input type="file" id="archivoInput" #archivoInput (change)="handleFileChange($event, 'Alpina')"
+          class="file-upload-input">
+      </div>
+      <button (click)="enviarHojaDeVida('nutresa')">Enviar Hoja de Vida</button>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="card">
+  <img src="./assets/img/teleperformace.jpeg" alt="Logo de Teleperformance" class="card-img-top">
+  <div class="card-content">
+    <h3>Teleperformance</h3>
+    <p>Requisitos para la vacante:</p>
+    <ul>
+      <li>Experiencia en atención al cliente y servicio telefónico (mínimo 1 año)</li>
+      <li>Habilidades de comunicación verbal y escrita</li>
+      <li>Conocimientos en sistemas de atención al cliente y CRM</li>
+      <li>Capacidad para trabajar en un entorno dinámico y multitarea</li>
+    </ul>
+  <div class="card-content file-upload-container">
+    <label for="archivoInput" class="file-upload-btn">
+      Seleccionar Archivo
+    </label>
+    <span class="file-name" *ngIf="archivoAdjunto">{{ archivoAdjunto.name }}</span>
+    <input type="file" id="archivoInput" #archivoInput (change)="handleFileChange($event, 'Alpina')"
+      class="file-upload-input">
+  </div>
+  <button (click)="enviarHojaDeVida('Teleperformance')">Enviar Hoja de Vida</button>
+  </div>
+</div>
+
+  <app-footer></app-footer>
+</div>

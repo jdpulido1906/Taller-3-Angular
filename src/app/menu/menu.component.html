@@ -1,0 +1,28 @@
+<nav>
+    <label for ="logo" class="logo">CompuSena</label>
+    <ul>
+        <li><a routerLink="/dashboard">Inicio</a></li>
+        <li><a routerLink="/empresas">Empresas</a></li>
+        <li><a routerLink="/perfil/editar">Administrar</a></li>  
+    </ul>
+    <img src="./assets/img/perfil.jpg" alt="profil" class="user-pic" (click)="toggleMenu()" />
+    <div class="sub-menu-wrap" id="subMenu">
+        <div class="sub-menu">
+            <div class="user-info">
+                <img src="./assets/img/perfil.jpg" alt="profil" class="user-pic" />
+                <h3>usuarios</h3>
+            </div>
+            <hr />
+            <a routerLink="/perfil/editar" class="sub-menu-link">
+                <i data-feather="user" class="icon"></i>
+                <p>Editar Perfil</p>
+                <span> > </span>
+            </a>
+            <a href="" class="sub-menu-link">
+                <i data-feather="log-out" class="icon"></i>
+                <p>Salir</p>
+                <span> > </span>
+            </a>
+        </div>
+    </div>
+</nav>

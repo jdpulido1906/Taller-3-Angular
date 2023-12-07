@@ -1,0 +1,31 @@
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px 0;
+}
+
+.footer-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.contact-info,
+.useful-links {
+  flex: 1;
+  margin-bottom: 20px;
+}
+
+.useful-links ul {
+  list-style: none;
+  padding: 0;
+}
+
+.useful-links li {
+  margin-bottom: 5px;
+}
+
+.copyright {
+  margin-top: 20px;
+  text-align: center;
+}

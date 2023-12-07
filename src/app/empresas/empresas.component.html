@@ -1,0 +1,18 @@
+<app-menu></app-menu>
+
+<div>
+    <label for="filtro">Filtrar por nombre:</label>
+    <input type="text" id="filtro" [(ngModel)]="filtroNombre" placeholder="Ingrese el nombre de la empresa"
+        (input)="filtrarEmpresas()" />
+</div>
+
+<div class="cards-container">
+    <div *ngFor="let empresa of (empresasFiltradas.length > 0 ? empresasFiltradas : empresas)" class="card">
+        <img [src]="empresa.imagen" alt="Logo de {{ empresa.nombre }}" class="card-img-top">
+        <div class="card-body">
+            <h5 class="card-title">{{ empresa.nombre }}</h5>
+            <p class="card-text">{{ empresa.descripcion }}</p>
+            <a [routerLink]="['/detalles', empresa.id]" class="btn btn-primary">Ver detalles</a>
+        </div>
+    </div>
+</div>

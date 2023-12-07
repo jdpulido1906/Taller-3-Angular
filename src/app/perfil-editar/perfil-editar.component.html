@@ -1,0 +1,23 @@
+<app-menu></app-menu>
+
+<form [formGroup]="perfilForm" (submit)="onSubmit()">
+    <label for="nombre">Nombre:</label>
+    <input type="text" id="nombre" formControlName="nombre" />
+
+    <label for="apellido">Apellido:</label>
+    <input type="text" id="apellido" formControlName="apellido" />
+
+    <label for="email">Email:</label>
+    <input type="text" id="email" formControlName="email" />
+
+    <label for="puesto">Puesto de trabajo:</label>
+    <input type="text" id="puesto" formControlName="puesto" />
+
+    <label for="telefono">Teléfono:</label>
+    <input type="tel" id="telefono" formControlName="telefono" />
+
+    <label for="hojaVida">Añadir hoja de vida (solo archivos PDF):</label>
+    <input type="file" id="hojaVida" formControlName="hojaVida" accept=".pdf" />
+    
+    <button type="submit">Guardar cambios</button>
+</form>

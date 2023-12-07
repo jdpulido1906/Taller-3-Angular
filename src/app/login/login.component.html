@@ -1,0 +1,22 @@
+<div class="login-box">
+    <img src="./assets/img/perfil.jpg" alt="Logo" class="logo">
+    <h2>Login</h2>
+    <form>
+        <div class="user-box">
+            <input type="text" name="username" required [(ngModel)]="username">
+            <label>Username</label>
+        </div>
+        <div class="user-box">
+            <input type="password" name="password" required [(ngModel)]="password">
+            <label>Password</label>
+        </div>
+        <button type="button" (click)="submitForm()">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            Submit
+        </button>
+    </form>
+    <p>No tienes una cuenta? <a routerLink="/registrar">Regístrate</a></p>
+</div>

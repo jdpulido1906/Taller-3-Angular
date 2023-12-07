@@ -1,0 +1,19 @@
+<div class="administrar-container">
+    <h2>Administrar Hojas de Vida</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Empresa</th>
+                <th>Nombre</th>
+                <th>Correo Electrónico</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let hojaDeVida of hojasDeVida">
+                <td>{{ hojaDeVida.empresa }}</td>
+                <td>{{ hojaDeVida.nombre }}</td>
+                <td>{{ hojaDeVida.correo }}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
